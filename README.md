@@ -6,7 +6,7 @@ O código apresentado neste repositório mostra como você pode automatizar o se
 
 Você precisa colocar este script em seu Google Apps Script e alterar o seu `appscript.json` para autorizar as APIs do Google Formulário e Planilhas em sua aplicação. Adicionar este array em seu JSON:
 
-```
+```json
 "oauthScopes": [
     "https://www.googleapis.com/auth/forms.currentonly",
     "https://www.googleapis.com/auth/forms",
@@ -17,7 +17,7 @@ Você precisa colocar este script em seu Google Apps Script e alterar o seu `app
 
 No arquivo `index.js`, nas duas primeiras linhas, você precisa colocar os IDs do seu formulário e da sua planilha, respectivamente.
 
-```
+```javascript
 // Coloque o ID do seu formulário Google no argumento
 const form = FormApp.openById('');
 
